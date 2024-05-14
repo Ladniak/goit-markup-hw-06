@@ -39,7 +39,6 @@ img {
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: Regular;
     color: #434455;
     background: #ffffff;
 }
@@ -64,7 +63,6 @@ body {
 
 .container {
     max-width: 288px;
-    padding-right: 3,6px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -77,7 +75,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         padding-left: 15px;
@@ -314,7 +312,7 @@ body {
 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .nav-logo {
         margin-right: 76px;
     }
@@ -416,7 +414,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .first-sec {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-dekstop.jpg);
         padding: 188px 0;
@@ -429,7 +427,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .first-sec {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-dekstop@2x.jpg);
     }
@@ -488,7 +486,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .des-list {
         gap: 24px;
         flex-wrap: nowrap;
@@ -602,17 +600,13 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .team-list .sec-list {
         width: calc((100% - 3 * 24px) / 4);
     }
 
-    .sec-list:hover .logo-link {
-        background-color: #404BBF;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .sec-list .logo-link:focus {
+    .logo-link:hover,
+    .logo-link:focus {
         background-color: #404BBF;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -624,7 +618,7 @@ body {
     display: none;
 }
 
-.fourth-box {
+.fourth-sec {
     display: flex;
     flex-direction: column;
     padding: 96px 0;
@@ -684,10 +678,10 @@ body {
         gap: 24px;
         row-gap: 72px;
         justify-content: center;
-    }
+    } 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .icon-par {
         display: block;
     }
@@ -911,7 +905,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     
     .foot-box {
         padding: 100px 0;
@@ -1167,7 +1161,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .close-icon {
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
