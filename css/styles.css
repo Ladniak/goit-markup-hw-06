@@ -520,9 +520,6 @@ body {
 
 .third-sec {
     background-color: #f4f4fd;
-}
-
-.third-box {
     padding: 96px 28px;
 }
 
@@ -601,8 +598,11 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
-    .team-list .sec-list {
-        width: calc((100% - 3 * 24px) / 4);
+    .team-list {
+        gap: 24;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
     }
 
     .logo-link:hover,
