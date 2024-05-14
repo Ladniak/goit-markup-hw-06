@@ -356,6 +356,7 @@ body {
     background-position: center;
     max-width: 320px;
     padding: 72px 52px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
@@ -442,7 +443,7 @@ body {
 
 .second-box {
     display: flex;
-    margin: 96px 16px;
+    margin: 96px auto;
 }
 
 .des-list {
@@ -450,6 +451,7 @@ body {
     gap: 72px;
     flex-direction: column;
 }
+
 
 .des-list .par-title {
     font-weight: 700;
@@ -470,11 +472,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .second-box {
-        margin-right: 0;
-        margin-left: 0;
-    }
-    
     .des-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -492,11 +489,6 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-    .second-box {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     .des-list {
         gap: 24px;
         flex-wrap: nowrap;
@@ -1092,17 +1084,17 @@ body {
 
 .modal-check-div {
     margin-bottom: 24px;
+    display: flex;
 }
 
 .modal-check-label {
-    position: relative;
-    display: block;
+    display: flex;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    padding-left: 24px;
+    align-items: center;
 }
 
 .privacy-policy-link {
@@ -1113,15 +1105,13 @@ body {
 }
 
 .custom-check {
-    position: absolute;
-    top: 25%;
-    left: 0%;
-    display: inline-flex;
+    display: flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     cursor: pointer;
+    padding: 4px 3px;
     justify-content: center;
     align-items: center;
     fill: transparent;
@@ -1129,6 +1119,12 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked+.modal-check-label .custom-check {
+    background-color: #404bbf;
+    fill: #f4f4fd;
+    border: none;
 }
 
 .modal .submit-but {
@@ -1166,16 +1162,9 @@ body {
         width: 360px;
     }
 
-    .modal-check-label {
-        padding-left: 0;
-        position: static;
-        justify-content: flex-start;
+    .modal-check-div {
+        width: 360px;
     }
-
-    .custom-check {
-        position: static;
-    }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -1209,11 +1198,5 @@ body {
     .modal .submit-but:hover,
     .modal .submit-but:focus {
         background: #404BBF;
-    }
-
-    .modal-check:checked+.modal-check-label .custom-check {
-        background-color: #404bbf;
-        fill: #f4f4fd;
-        border: none;
     }
 }
